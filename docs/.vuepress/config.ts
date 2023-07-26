@@ -7,7 +7,7 @@ export default defineUserConfig({
   title: "Loker小站",
   description: "个人主页",
 
-  base: "/",
+  base: "/FTQPrivuepress-docs-starter/",
 
   theme,
 
