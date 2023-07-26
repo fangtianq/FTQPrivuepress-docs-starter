@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://github.com/fangtianq/sitemap.xml
+Sitemap: https://github.com/fangtianq/FTQPrivuepress-docs-starter/sitemap.xml
