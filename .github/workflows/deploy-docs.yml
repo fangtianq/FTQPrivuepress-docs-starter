@@ -1,33 +1,37 @@
-name: 部署文档
-
+name: Build and Deploy
 on:
   push:
     branches:
-      # 确保这是你正在使用的分支名称
       - master
-
 jobs:
-  deploy-gh-pages:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [18]
     steps:
-      - name: Checkout
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
         with:
-          fetch-depth: 0
-          # 如果你文档需要 Git 子模块，取消注释下一行
-          # submodules: true
-      - name: 安装依赖
-        run: yarn install --frozen-lockfile
-
-      - name: 构建文档
-        env:
-          NODE_OPTIONS: --max_old_space_size=8192
-        run: |-
-          yarn run docs:build
-          > docs/.vuepress/dist/.nojekyll
-      - name: 部署文档
+          persist-credentials: false
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7.5.0
+      - name: Use Node.js ${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: 'pnpm'
+      - run: |
+          pnpm install
+          pnpm run docs:build
+          touch docs/.vuepress/dist/.nojekyll
+      - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          # 这是文档部署到的分支名称
+          GITHUB_TOKEN: ${{ secrets.admin }}
           branch: gh-pages
           folder: docs/.vuepress/dist
+          repository-name: fangtianq/FTQPrivuepress-docs-starter
+          token: ${{ secrets.admin }}
