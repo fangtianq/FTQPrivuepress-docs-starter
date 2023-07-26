@@ -50,15 +50,10 @@ export default hopeTheme({
   },
 
   plugins: {
-    blog: {
-      autoExcerpt: true,
-    },
+    blog: true,
     mdEnhance: {
-      enableAll: false,
       codetabs: true,
-      presentation: {
-        plugins: ["highlight", "math", "search", "notes", "zoom"],
-      },
+      presentation: ["highlight", "math", "search", "notes", "zoom"],
     },
   },
 });
