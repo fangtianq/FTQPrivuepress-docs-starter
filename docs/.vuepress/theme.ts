@@ -6,7 +6,7 @@ export default hopeTheme({
   hostname: "https://github.com/fangtianq",
 
   author: {
-    name: "Loker",
+    name: "Valkyr",
     url: "https://github.com/fangtianq",
   },
 

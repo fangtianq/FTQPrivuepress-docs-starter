@@ -18,3 +18,5 @@ sticky: true
 - [常见问题](qa.md)
 
 - [更新日志](update.md)
+
+- [加密日志](encrypt.md)

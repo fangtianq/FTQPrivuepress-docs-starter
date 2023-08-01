@@ -4,7 +4,7 @@ import { searchPlugin } from "@vuepress/plugin-search";
 
 export default defineUserConfig({
   lang: "zh-CN",
-  title: "Loker小站",
+  title: "Valkyr",
   description: "个人主页",
 
   base: "/FTQPrivuepress-docs-starter/",
