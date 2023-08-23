@@ -55,5 +55,12 @@ export default hopeTheme({
       codetabs: true,
       presentation: ["highlight", "math", "search", "notes", "zoom"],
     },
+    comment: {
+      provider: "Giscus", // Artalk | Giscus | Waline | Twikoo
+      repo: "fangtianq/FTQPrivuepress-docs-starter",
+      repoId: "R_kgDOJ_x0vg",
+      category: "General",
+      categoryId: "DIC_kwDOJ_x0vs4CYSvf",
+    }
   },
 });

@@ -18,11 +18,11 @@ actions:
   - text: game 💡
     link: ./game/传奇商店.md
 
-  - text: 配置 🛠
-    link: ./config/
+  - text: 常用 🛠
+    link: ./常用/常用.md
 
-  - text: 在线文档 🪀
-    link: https://theme-hope.vuejs.press/zh/guide/
+  - text: vue 🪀
+    link: ./rawVue/index.md
 highlights:
   - header: 在 Markdown 中添加你想要的内容
     description: 我们扩展了标准的 CommonMark 规范，为你添加了成吨功能。

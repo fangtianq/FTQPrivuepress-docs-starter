@@ -3,8 +3,8 @@ home: true
 icon: home
 title: 个人主页
 heroImage: /logo.svg
-heroText: Valkyr
-tagline: Embrace the power of Valkyr and let your inner warrior rise, igniting the fire that consumes your fears as you soar amidst the chaos with unrivaled grace.
+heroText: 哈尼宝贝
+tagline: 打麻将啊～大舅～ 姨妈表舅来起～ 碰八条哦 一条龙呐 单吊六万～ 打麻将啊～大舅～ 姨妈表舅来起～ 碰八条哦 一条龙呐 单吊六万～ 五条三万～摸南呐～要夹二万啊～ 你摸南呐 胡牌叫牌 刚好要六番～ 五条三万～摸南呐～要夹二万啊～ 你摸南呐 胡牌叫牌 刚好要六番～
 actions:
   - text: TOTO 💡
     link: /
