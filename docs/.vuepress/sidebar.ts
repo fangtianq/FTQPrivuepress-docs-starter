@@ -5,5 +5,6 @@ export default sidebar(
     "/guide/": "structure",
     "/soft/termux/": "structure",
     "/常用/": "structure",
+    "/game/": "structure",
   },
 );
