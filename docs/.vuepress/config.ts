@@ -8,7 +8,7 @@ export default defineUserConfig({
   description: "个人主页",
 
   base: "/FTQPrivuepress-docs-starter/",
-
+  port:8081,
   theme,
 
   plugins: [
