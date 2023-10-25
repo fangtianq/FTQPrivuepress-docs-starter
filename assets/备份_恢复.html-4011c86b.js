@@ -1,8 +1,0 @@
-import{_ as a}from"./plugin-vue_export-helper-c27b6911.js";import{o as e,c as s,e as n}from"./app-d9a27c36.js";const r={},i=n(`<h1 id="备份-恢复" tabindex="-1"><a class="header-anchor" href="#备份-恢复" aria-hidden="true">#</a> 备份&amp;恢复</h1><p>参考：<code>https://wiki.termux.com/wiki/Backing_up_Termux</code></p><h2 id="备份" tabindex="-1"><a class="header-anchor" href="#备份" aria-hidden="true">#</a> 备份</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>termux-setup-storage
-<span class="token builtin class-name">cd</span> /data/data/com.termux/files
-<span class="token function">tar</span> <span class="token parameter variable">-zcf</span> home/storage/external-1/termux/bak/202304231636_termux-backup.tar.gz home usr
-
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="恢复" tabindex="-1"><a class="header-anchor" href="#恢复" aria-hidden="true">#</a> 恢复</h2><div class="language-bash line-numbers-mode" data-ext="sh"><pre class="language-bash"><code>termux-setup-storage
-<span class="token builtin class-name">cd</span> /data/data/com.termux/files
-<span class="token function">tar</span> <span class="token parameter variable">-zxvf</span> /sdcard/1/termux-backup.tar.gz <span class="token parameter variable">-C</span> /data/data/com.termux/files --recursive-unlink --preserve-permissions
-</code></pre><div class="line-numbers" aria-hidden="true"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div>`,6),t=[i];function d(c,l){return e(),s("div",null,t)}const m=a(r,[["render",d],["__file","备份_恢复.html.vue"]]);export{m as default};
